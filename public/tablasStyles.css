@@ -41,6 +41,7 @@
   .table-image {
     margin-top: 0;
     margin-left: 20px;
+    max-width: 300px;
   }
 }
 
