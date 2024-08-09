@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas de Multiplicar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="tablasStyles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Tablas de Multiplicar</h1>
+    <div id="tables-container">
+      <script>
+        const colors = [
+          'rainbow-bg-1', 'rainbow-bg-2', 'rainbow-bg-3', 'rainbow-bg-4',
+          'rainbow-bg-5', 'rainbow-bg-6', 'rainbow-bg-7', 'rainbow-bg-8', 'rainbow-bg-9', 'rainbow-bg-10'
+        ];
+        for (let i = 1; i <= 10; i++) {
+          document.write(`
+            <div class="table-container ${colors[i - 1]} p-3 rounded mb-4">
+              <div>
+                <h3>Tabla del ${i}</h3>
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>Tabla</th>
+                      <th>Resultado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+          `);
+          for (let j = 1; j <= 10; j++) {
+            document.write(`
+              <tr>
+                <td>${i} x ${j}</td>
+                <td>${i * j}</td>
+              </tr>
+            `);
+          }
+          document.write(`
+                  </tbody>
+                </table>
+              </div>
+              <img src="images/tabla${i}.png" alt="Tabla del ${i}" class="img-fluid table-image">
+            </div>
+          `);
+        }
+      </script>
+    </div>
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-primary">Volver al Juego</a>
+    </div>
+  </div>
+</body>
+</html>

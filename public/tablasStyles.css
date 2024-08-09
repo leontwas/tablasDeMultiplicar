@@ -1,0 +1,75 @@
+/* Estilos de fondo arco iris */
+.rainbow-bg-1 { background-color: #6f05ba; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-2 { background-color: #128d84; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-3 { background-color: #2d2df5; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-4 { background-color: #ff7f00; color: #000000; border-color: #000000; }
+.rainbow-bg-5 { background-color: #ffff00; color: #000000; border-color: #000000; }
+.rainbow-bg-6 { background-color: #017a0e; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-7 { background-color: #b31a1a; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-8 { background-color: #0da49f; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-9 { background-color: #ff00ff; color: #ffffff; border-color: #ffffff; }
+.rainbow-bg-10 { background-color: #524f52; color: #ffffff; border-color: #ffffff; }
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.table-content {
+  width: 100%;
+}
+
+.table-image {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Media queries para responsividad */
+@media (min-width: 576px) {
+  .table-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .table-image {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .table-container {
+    padding: 30px;
+  }
+  .table-image {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .table-container {
+    padding: 40px;
+  }
+  .table-image {
+    max-width: 400px;
+  }
+}
+
+/* Estilos para la tabla */
+table {
+  color: inherit; /* Heredar color de texto del contenedor */
+  border-color: inherit; /* Heredar color de borde del contenedor */
+}
+
+/* Estilos para los mensajes */
+.message {
+  font-size: 1.5em;
+  color: #000000;
+}

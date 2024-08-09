@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Tablas de Multiplicar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="bungee-regularspice- text-center">Juego de Tablas de Multiplicar</h1>
+    <div class="row mb-3">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="table-select" class="form-label">Selecciona la tabla:</label>
+          <select id="table-select" class="form-select w-100">
+            <option value="" disabled selected>Elige la tabla</option>
+            <option value="1">Tabla del 1</option>
+            <option value="2">Tabla del 2</option>
+            <option value="3">Tabla del 3</option>
+            <option value="4">Tabla del 4</option>
+            <option value="5">Tabla del 5</option>
+            <option value="6">Tabla del 6</option>
+            <option value="7">Tabla del 7</option>
+            <option value="8">Tabla del 8</option>
+            <option value="9">Tabla del 9</option>
+            <option value="10">Tabla del 10</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p id="question" class="text-center"></p>
+        <div class="form-group">
+          <input type="number" id="answer" class="form-control" placeholder="Tu respuesta">
+        </div>
+        <div class="d-grid gap-2">
+          <button id="submit" class="btn btn-primary">Responder</button>
+          <button id="hint-btn" class="btn btn-secondary">Pista</button>
+          <button id="practice-btn" class="btn btn-warning">Mejor sigo practicando</button>
+        </div>
+        <p id="result" class="text-center mt-3"></p>
+        <p id="hint" class="text-center mt-2"></p>
+      </div>
+      <div class="col-md-6">
+        <img id="status-image" src="images/image1.png" alt="Status Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

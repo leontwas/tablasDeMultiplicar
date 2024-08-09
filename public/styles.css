@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(135deg, #8b00ff, #4b0082, #0000ff, #00ff00, #ffff00, #ff7f00, #ff0000);
+  background-size: cover; /* Asegura que el fondo cubra toda el área visible */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+  background-blend-mode: screen;
+  animation: rainbow 20s ease infinite;
+  margin: 0; /* Elimina los márgenes predeterminados para asegurar que el fondo cubra toda la página */
+  height: 100vh; /* Asegura que el fondo cubra la altura completa de la ventana */
+}
+/* Estilo para el select */
+#table-select {
+  width: 100%; /* Asegura que el select ocupe el ancho completo de su contenedor */
+  max-width: 49%; /* Asegura que el select no exceda el ancho del contenedor */
+}
+
+
+.form-label {
+  color: yellow;
+}
+
+.bungee-regularspice- {
+  margin-bottom: 5px;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: white;
+}
+
+#question {
+  margin-bottom: 20px;
+  color: white;
+}
+
+#result {
+  font-size: 18px;
+  color: white;
+}
+
+#hint {
+  font-size: 16px;
+  color: white;
+}
+
+#status-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/****************************** Estilos para celulares *************************** */
+@media (max-width: 576px) {
+  #question {
+    font-size: 1.2rem;
+  }
+
+  #result {
+    font-size: 1rem;
+  }
+
+  #hint {
+    font-size: 0.9rem;
+  }
+  
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/*********************************** Estilos para tablets *********************************/
+@media (min-width: 577px) and (max-width: 768px) {
+  #question {
+    font-size: 1.5rem;
+  }
+
+  #result {
+    font-size: 1.2rem;
+  }
+
+  #hint {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+/************************************ Estilos para notebooks ******************************/
+@media (min-width: 769px) {
+  #question {
+    font-size: 2vw;
+  }
+
+  #result {
+    font-size: 1.5svw;
+  }
+
+  #hint {
+    font-size: 1vw;
+  }
+
+  button {
+    font-size: 1vw; /* Aumentar el tamaño de letra de los botones */
+  }
+}
+
